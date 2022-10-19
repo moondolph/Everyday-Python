@@ -25,7 +25,10 @@ N = int(input())    #첫줄에 자연수 N(5<=N<=100)이 주어지고
 arr = list(map(int,input().split()))    #두 번째 줄에는 각 학생의 수학점수인 N개의 자연수가 주어집니다.
 
 avg = int(format(sum(arr) / len(arr),".0f"))    #평균은 소수 첫째 자리에서 반올림합니다.
-# avg = around(sum(arr)/N)                      #(이렇게 하는게 더 나음)
+# avg = round(sum(arr)/N)                      #주의:python은 round_half_even을 사용하기 때문에
+                                               # a=a+0.5
+                                               # a=int(a) 소수점 버리는 기능
+
 disMin = float('inf')   #평균과 가장 가까운 거리를 비교해줄 기준 변수 생성
 
 for i in range(len(arr)):       #for index, point in enumerate(arr): --> enumerate을 쓰면 index랑 value 동시에 돌릴 수 있음
