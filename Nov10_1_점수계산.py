@@ -29,8 +29,8 @@ OX 문제는 맞거나 틀린 두 경우의 답을 가지는 문제를 말한다
 
 n=int(input())
 a=list(map(int, input().split()))
-cnt=0   #가산점 구하는 그릇
-sum=0   #총합 그릇
+cnt=0   #가산점 구하는 그릇 -->  0 1 2 3 0 1 2  유동적으로 변함
+sum=0   #총합 그릇  --> 계속 쌓임
 for x in a:
     if x==1:
         cnt+=1
