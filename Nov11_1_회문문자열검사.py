@@ -36,3 +36,12 @@ for i in range(n):
     else:
         print("#%d YES" %(i+1))
 
+
+#다른 코드
+for i in range(n):
+    s=input()
+    s=s.upper()
+    if s==s[::-1]:
+        print("#%d YES" %(i+1))
+    else:
+        print("#%d YES" %(i+1))
